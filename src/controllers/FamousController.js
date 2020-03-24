@@ -1,12 +1,19 @@
 import Famous from '../models/Famous';
 
 export const createFamous = [
-  'create-famous',
+  'update-famous',
   function(request) {
-    return FamousList.insert(request);
+    Famous.update(
+      { _id: request.id },
+      {
+        $set: { firstname: request.firstname }
+      }
+    );
+
+    return Famous.findOne({ _id: request.id });
   },
   {
-    url: 'create-famous',
+    url: 'update-famous',
     getArgsFromRequest: function(request) {
       return [request.body];
     }
