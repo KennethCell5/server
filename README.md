@@ -4,12 +4,12 @@ To Run:
 
 <blockquote>
 
-    <p>git clone https://github.com/KennethCell5/server.git</p>
+    git clone https://github.com/KennethCell5/server.git
 
-    <p>cd server</p>
+    cd server
     
-    <p>meteor npm install</p>
+    meteor npm install
     
-    <p>meteor --port 5000</p>
+    meteor --port 5000
 
 </blockquote>
