@@ -6,7 +6,12 @@ export const createFamous = [
     Famous.update(
       { _id: request.id },
       {
-        $set: { firstname: request.firstname }
+        $set: {
+          firstname: request.firstname,
+          lastname: request.lastname,
+          dob: request.dob,
+          biography: request.biography
+        }
       }
     );
 
